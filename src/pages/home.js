@@ -11,8 +11,10 @@ import clean from "./Images/clean.jpg";
 
 const Home = () => {
     return <>
-    
-    <video controls  id="myVideo">
+    <div className="hom">
+    <video controls  id="myVideo"  loop style={{
+      zIndex:"-1"
+    }} >
         <source src= {video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -139,7 +141,7 @@ const Home = () => {
            </div>
 
 
-
+</div>
     </>
   };
   

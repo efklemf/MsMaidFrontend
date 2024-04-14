@@ -16,7 +16,7 @@ const handleLoginSubmit = async(e) => {
  e.preventDefault();
 
  try{
-  const response = await axios.post('http://localhost:8000/login',loginData);
+  const response = await axios.post('https://backend-msmaid.onrender.com/login',loginData);
   const {success,message,user} = response.data;
     
   if(success){
@@ -71,7 +71,9 @@ const handleLoginSubmit = async(e) => {
         onChange={handleLoginChange}
         required
         /><br/>
-     <button type='submit2'>Login</button>
+     <button style={{
+      width:"7rem"
+     }} type='submit2'>Login</button>
         <p>
           Not registered yet? <Link to ='/registrationPage'>Register Here</Link>
         </p>

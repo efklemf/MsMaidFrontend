@@ -39,25 +39,22 @@ import emailjs from '@emailjs/browser';
     return (
       
       
-      <div >
-       
-
-
-
+      <div  className="con">
         {/* image part */}
-       <div className="img"><img src={img} alt="Cinque Terre"  width="1247" height="300"></img> </div> 
+       <div className="img"><img src={img} alt="Cinque Terre"   height="300"></img> </div> 
        < div className="main">
+        
     <div className="map-section">
       <div className="gmap-frame">
         
-        <iframe id="frame2" width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+        <iframe id="frame2"  height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
         src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Molar%20Band%20Extension,%20Badarpur,%20Delhi,%20India+(Ms.%20Maid)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
           <a href="https://www.maps.ie/population/">Find Population on Map</a></iframe>
           
       </div>
         
     </div>
-    <div className="contact">
+    <div className="contact" >
         <h1>Contact Us</h1>
         
       <form ref={form} onSubmit={sendEmail} >
@@ -67,9 +64,14 @@ import emailjs from '@emailjs/browser';
            <label>Email</label>
            <input type="email" id="lname"value={email} required  name="user_email"onChange={(event)=>setEmail(event.target.value)} placeholder="Your email.."/>
            <label>Message</label>
-           <textarea name="message" id="country" required  onChange={(event)=>setMessage(event.target.value)}
+           <textarea name="message" id="country" style={{
+            display:"flex",
+            width:"100%"
+           }} required  onChange={(event)=>setMessage(event.target.value)}
            value={message} placeholder="Your message.."/>
-          <input type="submit" value="Submit" ></input>
+          <input style={{
+            width:"100%"
+          }} type="submit" value="Submit" ></input>
     </form>
     {/* pop part */}
         {/* <div className="popup" id="popup">
@@ -79,7 +81,8 @@ import emailjs from '@emailjs/browser';
          <button type="button" >OK</button>
         </div> */}
   </div>
-        </div>
+  </div>
+        
     <div className="desc">
       <h1>Feel free to Contact us</h1>
       <p>Ms. Maids  offers everything from one-time cleanings, to ongoing weekly, biweekly, 4-weekly and on-call house cleanings, to specialty services and beyond. Our London cleaners are licensed, highly trained, and dedicated to providing thorough house cleaning services in London, every time.
