@@ -162,49 +162,48 @@ const Profile = () => {
 
       {/* Footer Section */}
       <div className="Footer">
-        {/* ... (Your existing footer code) */}
-        <div className="container">
-                   <div className="row">
-                       <div className="col-md-6 col-lg-5 col-12 ft-1">
-                          <h3><span>Ms.</span>Maid</h3>
-                          <p>Ms. Maid is a reputable and professional cleaning services company dedicated to providing high-quality, reliable, and customized cleaning solutions to meet the unique needs of our clients. <br/>With years of experience in the industry.</p>
-                          <div className="footer-icons">
-                         <a target = "blank" href = 'https:www.facebook.com/'><i class="fa-brands fa-facebook" ></i></a>
+                <div className="container">
+                  <div className="row">
+                     <div className="col-md-6 col-lg-5 col-12 ft-1">
+                        <h3><span>Ms.</span>Maid</h3>
+                        <p>Ms. Maid is a reputable and professional cleaning services company dedicated to providing high-quality, reliable, and customized cleaning solutions to meet the unique needs of our clients. <br/>With years of experience in the industry.</p>
+                        <div className="footer-icons">
+                        <a target = "blank" href = 'https://www.facebook.com/'><i class="fa-brands fa-facebook" ></i></a>
 
-                          <a target = "blank" href = 'https:twitter.com/home'><i class="fa-brands fa-x-twitter"></i></a>
+                        <a target = "blank" href = 'https://twitter.com/home'><i class="fa-brands fa-x-twitter"></i></a>
 
-                          <a target = "blank" href = 'https:www.youtube.com/'><i class="fa-brands fa-youtube"></i></a>
+                        <a target = "blank" href = 'https://www.youtube.com/'><i class="fa-brands fa-youtube"></i></a>
 
-                          <a target = "blank" href = 'https:www.instagram.com/'><i class="fa-brands fa-instagram"></i></a>
+                        <a target = "blank" href = 'https://www.instagram.com/'><i class="fa-brands fa-instagram"></i></a>
 
-                          <a target = "blank" href = 'https:www.linkedin.com/feed/'><i class="fa-brands fa-linkedin"></i></a>
+                        <a target = "blank" href = 'https://www.linkedin.com/feed/'><i class="fa-brands fa-linkedin"></i></a>
                         </div>
-                       </div>
-                       <div className="col-md-6 col-lg-3 col-12 ft-2">
-                        <h4> <i class="fa-solid fa-link"></i> Quick Links</h4>
-                        <ul>
+                     </div>
+                     <div className="col-md-6 col-lg-3 col-12 ft-2">
+                      <h4> <i class="fa-solid fa-link"></i> Quick Links</h4>
+                      <ul>
                      <li > <  Link to="/" className="active">Home</Link> </li>
 
-                      <li> <Link to="/blogs">Services</Link> </li> 
+                     <li> <Link to="/blogs">Services</Link> </li> 
 
                      <li> <Link to="/contact">Contact</Link>  </li>
 
-                   <li> <Link to="/about">About us</Link> </li>
-                     </ul>
-                    </div>
-                     <div className="col-md-6 col-lg-4 col-12 ft-3">
-                    <h3> <i className="fa-solid fa-address-card"></i> Contact Us</h3>
-                      <p><i className="fa-solid fa-phone-volume"></i> +91 879580 4915 , 9311898957</p>
-                      <p><i className="fa-solid fa-envelope"></i> chandresh1999kumar@gmail.com</p>
-                    <p><i className="fa-solid fa-paper-plane"></i> Molarband Extn Badarpur New Delhi 110044</p>
+                     <li> <Link to="/about">About us</Link> </li>
+                      </ul>
                      </div>
-                   </div>
-              </div>
-      </div>
+                     <div className="col-md-6 col-lg-4 col-12 ft-3">
+                      <h3> <i class="fa-solid fa-address-card"></i> Contact Us</h3>
+                      <p><i class="fa-solid fa-phone-volume"></i> +91 879580 4915 , 9311898957</p>
+                      <p><i class="fa-solid fa-envelope"></i> chandresh1999kumar@gmail.com</p>
+                      <p><i class="fa-solid fa-paper-plane"></i> Molarband Extn Badarpur New Delhi 110044</p>
+                     </div>
+                    </div>
+                </div>
+           </div>
+           <div className="Last-footer">
+            <p>Design By Chandresh</p>
+           </div>
 
-      <div className="Last-footer">
-        <p>Design By Chandresh</p>
-      </div>
     </div>
   );
 };

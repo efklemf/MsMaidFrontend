@@ -1,5 +1,6 @@
 body{
   background-color: rgb(210, 215, 221);
+  overflow-x: hidden;
 }
 
 
@@ -28,6 +29,7 @@ body{
   margin-left: 10%;
  
   }
+ 
 .navCss>h1{
   font-size: 30px;
   
@@ -133,11 +135,12 @@ display: flex;
 .img >p{
   /* background-color: rgb(249, 233, 233); */
 color: rgb(2, 17, 2);
-  width: max-content;
-  
+  width: 100vw;
+  text-align: justify;
 }
 .main{
-  
+    display: flex;
+    width: 100vw;
   background-color: #fff;
 }
 .data>img{
@@ -152,6 +155,16 @@ color: rgb(2, 17, 2);
   color: rgba(47, 18, 27, 0.715);
   opacity: inherit;
   
+}
+.con{
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.hom{
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
 }
 .data>h1{
   position: absolute;
@@ -174,6 +187,8 @@ color: rgb(2, 17, 2);
 }
 .services{
 display: flex;
+flex-direction: column;
+
 justify-content: space-between;
 
 }
@@ -190,12 +205,22 @@ justify-content: space-between;
   margin-right: 15px;
 }
 .services>img{
-  height: 250PX;
+ height: 70vh;
+ 
+
+}
+.conts{
   display: flex;
-  /* border: 10px solid; */
-  margin-left: 1%;
-  /* box-shadow: 10px 10px; */
-  /* color: rgb(255, 111, 0); */
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+  justify-content: center;
+}
+.conts>h6{
+  width: 100vw;
+    position: absolute;
+    top: 7rem;
 }
 .work>h2{
   color: gray;
@@ -239,13 +264,11 @@ justify-content: space-between;
 }
 /* Home Page */
 #myVideo {
- 
- 
-  right: 0;
+ right: 0;
   bottom: 0;
  object-fit: cover;
- width: 1261px;
- height: 400px;
+ width: 98.8vw;
+ height: 70vh;
  z-index: 5;
  
 }
@@ -400,21 +423,25 @@ justify-content: space-between;
     .desc>p{
       text-align: justify;
   letter-spacing: 3px;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  font-size: 1rem;
+  padding: 2rem;
+
   }
    
     .week{
       display: flex;
-      margin-left: 25%;
-      grid-gap: 25%;
-      
+      width: 40vw;
+      align-items: center;
+      justify-content: center;
     }
     .time{
-      display:flex ;
       grid-row-start: auto;
       display: grid;
   grid-template-columns: auto auto auto auto;
   margin-left: 5%;
+  align-items: center;
+  width: 90vw;
   
  }
  .week>ul{
@@ -427,7 +454,7 @@ justify-content: space-between;
   font-weight: 400;
   background-color: #2a3239;
   padding: 15%;
- height: 3%;
+ height: 97%;
  text-align: center;
  }
  .detail:hover{
@@ -459,6 +486,9 @@ margin-left: 5%;
      background-color: aqua;
     }
  }
+ .week{
+  width: 140%;
+ }
  /* benifit part here */
 .front>p{
   /* display: flex; */
@@ -489,6 +519,7 @@ margin-left: 5%;
     font-size: small;
     width: 100%;
   }
+ 
 }
 @media screen and (max-width: 500px) {
   .testmonial{
@@ -507,6 +538,10 @@ margin-left: 5%;
     .col1{
       
       width: 50%;
+    }
+    .time{
+      display: flex;
+      flex-direction: column;
     }
     
   .mySwiper{

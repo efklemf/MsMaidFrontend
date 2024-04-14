@@ -24,10 +24,8 @@ const about = () => {
         <div className="main">
           <div className="img">
            <h1>This is our Services</h1>
-           <p>Ms. Maid Cleaning Company
-              The Ms. Maid cleaning company has been working in this industry <br/> for more than 20 years ago, providing supreme cleaning services. We help people <br/>take care of their homes by <br/>offering them a wide range of expert cleaning services.
-
-              We serve domestic and commercial<br/><br/> clients in Delhi NCR  using high-quality equipment that customers don’t have <br/> and cannot use themselves.<br/> Our staff practice professionalism in all they do, and they are committed to respecting <br/>your space and cleaning for health. </p>
+           <p>Ms. Maid Cleaning Company The Ms. Maid cleaning company has been working in this industry <br/> for more than 20 years ago, providing supreme cleaning services. We help people <br/>take care of their homes by <br/>offering them a wide range of expert cleaning services.
+             We serve domestic and commercial<br/><br/> clients in Delhi NCR  using high-quality equipment that customers don’t have <br/> and cannot use themselves.<br/> Our staff practice professionalism in all they do, and they are committed to respecting <br/>your space and cleaning for health. </p>
               <div className="ho">
               <Swiper
         effect={'cards'}
@@ -49,12 +47,12 @@ const about = () => {
               </div>
           </div>
         
-           <div className="imgc"> <img style={{ width: 400, height: 500 }} src ={phot} alt="ck.png" />
+           <div className="imgc"> <img  src ={phot} alt="ck.png" />
             </div>
             
         </div>
       <div className="services">
-      <img style={{ width: 600, height: 500 }} src ={phot2} alt="ck.png" />
+      <img src ={phot2} alt="ck.png" />
       <div className="work">
        {/* <h2>What do you get out of our Maid Services?</h2> */}
        <p>
