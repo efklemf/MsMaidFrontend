@@ -130,5 +130,36 @@ router.post('/new-password',(req,res)=>{
     })
 })
 
+router.post("/googleLogin", (req, res) => {
+    const { email_verified, email, name, clientId} = req.body
+    if (email_verified) {
+        User.findOne({ email: email }).then((savedUser) => {
+            if (savedUser) {
+                const token = jwt.sign({ _id: savedUser.id }, JWT_SECRET)
+                const { _id, name, email } = savedUser
+                res.json({ token, user: { _id, name, email } })
+                console.log({ token, user: { _id, name, email} })
+            } else {
+                const password = email + clientId
+                const user = new User({
+                    name,
+                    email,
+                    password
+                })
+
+                user.save()
+                    .then(user => {
+                        let userId = user._id.toString()
+                        const token = jwt.sign({ _id: userId },JWT_SECRET)
+                        const { _id, name, email } = user
+                        res.json({ token, user: { _id, name, email } })
+                        console.log({ token, user: { _id, name, email} })
+                    })
+                    .catch(err => { console.log(err) })
+            }
+        })
+    }
+})
+
 
 module.exports = router
